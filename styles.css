@@ -8,10 +8,13 @@
      background-size: cover; 
      background-position: center;
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      align-items: center;
      height: 100vh;
     text-align: center;
+    max-width: 1200px;
+    margin: auto;
 }
 .hero-text{
     color: #FFFFFF;
@@ -30,6 +33,7 @@
 nav{
     background-color: #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin:  auto;
@@ -78,7 +82,7 @@ nav ul li a:hover{
 }
 .scontainer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     gap: 20px;
     max-width:1200px;
     margin:auto;
@@ -190,7 +194,7 @@ nav ul li a:hover{
 }
 .n-pcard ul,.p-pcard ul{
     list-style:circle;
-    flexl-grow: 1;
+    flex: 1;
     padding: 20px;
 }
 .n-pcard li{
@@ -224,4 +228,25 @@ nav ul li a:hover{
 }
 .pp-button:hover{
     background-color:#0D1B2A
+}
+.footer{
+    background-color: #0D1B2A;
+    max-width: 1200px;
+    margin:  auto;
+    padding: 8px 0px;
+    padding: 8px 10px;
+}
+.foottop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons a{
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.footer p{
+    color:#E5E7EB;
+    font-size: 12px;
 }
